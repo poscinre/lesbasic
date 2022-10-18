@@ -1,38 +1,195 @@
-.App {
+body{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-bg{
+  height: 300px;
+  background-image: url(./main.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.col-md-4{
+  text-align: center;
+}
+.col-md-4>a>img{
+  width: 300px;
+  height: 300px;
+}
+
+.product{
+  margin-top: 50px;
+}
+
+.row{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:768px) {
+  .row{
+    width: 350px;
+    margin: 0 auto;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.more{
+  margin-left: 48%; 
+}
+
+h6{
+  margin: 10px;
+  text-align: center;
+}
+
+a{
+  margin: 10px;
+  text-decoration: none;
+  color: #777;
+}
+
+.cart{
+  width: 70%;
+  margin: 50px auto;
+}
+th{
+  width: 25%;
+}
+tr>td:nth-child(1){
+  width: 25%;
+}
+tr>td:nth-child(2){
+  width: 25%;
+}
+tr>td:nth-child(3){
+  width: 25%;
+}
+tr>td:nth-child(4){
+  width: 25%;
+}
+
+.dropdown-item:hover{
+  background: none;
+}
+
+button{
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 2px;
+}
+.col-md-6>p{
+  margin: 30px 0 30px 15px;
+}
+.col-md-6>a>button{
+  margin: 0;
+}
+
+.location>span{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 10px;
+}
+.location>span{
+  margin-left: 50px;
+}
+
+#map{
+  margin: 10px 0 20px;
+}
+
+.privacy{
+  width: 800px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+
+.privacy>h2{
+  margin: 30px;
+}
+
+.privacy>p{
+  padding: 30px;
+  margin-left: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-indent: 20px;
+  text-align: justify;
 }
 
-.App-link {
-  color: #61dafb;
+.privacy>h5{
+  padding: 30px 0 0 20px;
+  text-align: left;
+  text-indent: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.customer{
+  margin: 50px auto;
+  width: 800px;
+}
+.customer>p{
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+.customer>h2{
+  margin-bottom: 50px;
+}
+.customer>p, .customer>h5{
+  text-align: left;
+}
+
+.order{
+  margin: 0 auto;
+  width: 500px;
+}
+
+.order>p{
+  margin-top: 50px;
+}
+
+.location{
+  margin: 20px auto;
+  width: 500px;
+  text-align: left;
+}
+
+#map{
+  margin-top: 20px;
+}
+
+.ourstory{
+  width: 800px;
+  margin: 0px auto;
+}
+
+.ourstory>h2, .ourstory>h5{
+  margin: 50px 0;
+}
+
+.ourstory>p{
+  text-align: justify;
+  margin: 10px 0 50px;
+}
+
+iframe{
+  width: 640px;
+  height: 360px;
+}
+
+.detail{
+  margin-top: 50px;
+}
+
+.tab{
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+hr{
+  margin: 50px;
+}
+
+h4{
+  margin: 20px;
 }
