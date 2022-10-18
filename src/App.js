@@ -10,7 +10,6 @@ import { Routes, Route, useNavigate, Link} from 'react-router-dom';
 const Detail = lazy(() => import('./detail'));
 const Cart = lazy(()=> import('./Cart.js'));
 const Order = lazy(()=> import('./Order.js'));
-const Location = lazy(()=> import('./Location.js'));
 const Privacy = lazy(()=> import('./Privacy.js'));
 const Customer = lazy(()=> import('./Customer.js'));
 const Ourstory = lazy(()=> import('./Ourstory.js'));
@@ -37,8 +36,7 @@ function App() {
           <Nav className="me-auto">
             <Nav.Link onClick={()=>{navigate('/lesbasic')}}>Home</Nav.Link>
             <Nav.Link onClick={()=>{navigate('/cart')}}>Cart</Nav.Link>
-            <NavDropdown title="Contact" id="basic-nav-dropdown">
-              <NavDropdown.Item onClick={()=>{navigate('/location')}}>매장찾기</NavDropdown.Item>
+            <NavDropdown title="Contact" id="basic-nav-dropdown">             
               <NavDropdown.Item onClick={()=>{navigate('/customer')}}>고객센터</NavDropdown.Item>
               <NavDropdown.Item onClick={()=>{navigate('/privacy')}}>이용약관</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -73,7 +71,6 @@ function App() {
         <Route path="/detail/:id" element={<Detail cloth={cloth}/>} />
         <Route path="/cart" element={<Cart/>} />  
         <Route path="/order" element={<Order/>} />
-        <Route path="/location" element={<Location/>} />
         <Route path="/privacy" element={<Privacy/>} />
         <Route path="/customer" element={<Customer/>} />
         <Route path="/ourstory" element={<Ourstory/>} />

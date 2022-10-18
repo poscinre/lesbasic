@@ -193,3 +193,10 @@ hr{
 h4{
   margin: 20px;
 }
+
+
+.tab_dsc{
+  margin: 0 auto;
+  width: 900px;
+  text-align: left;
+}

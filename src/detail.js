@@ -43,19 +43,17 @@ function Detail(props){
                 <Nav.Link onClick={()=>{ setTab(2) }} eventKey="link2">품번</Nav.Link>
               </Nav.Item>
           </Nav> 
-          <TabContent cloth={props.cloth} tab={tab} />
+          
+      </div>
+        <div className='tab_dsc'>
+          <div style={{margin:'10px'}}>      
+          </div>{[ <div style={{height:'100px'}}>{find.title}</div>, 
+          <div style={{height:'100px'}}>{find.content}</div>, 
+          <div style={{height:'100px'}}>lesbasic-{find.id}</div>][tab]}
         </div>
       </div> 
     )
   }
-  
-  function TabContent({tab, cloth}){
-
-    return (<div style={{margin:'10px'}}>
-      {[ <div style={{height:'100px'}}>{cloth[0].title}</div>, 
-      <div style={{height:'100px'}}>{cloth[0].content}</div>, 
-      <div style={{height:'100px'}}>COBQX-F26588</div>][tab]}
-      </div>)
-  }
+      
   
   export default Detail;
