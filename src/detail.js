@@ -40,7 +40,7 @@ function Detail(props){
                 <Nav.Link onClick={()=>{ setTab(1) }} eventKey="link1">상품설명</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link onClick={()=>{ setTab(2) }} eventKey="link2">품번</Nav.Link>
+                <Nav.Link onClick={()=>{ setTab(2) }} eventKey="link2">상품번호</Nav.Link>
               </Nav.Item>
           </Nav> 
           

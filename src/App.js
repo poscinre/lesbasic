@@ -30,11 +30,11 @@ function App() {
 
       <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/lesbasic">Les Basic</Navbar.Brand>
+        <Navbar.Brand href="/lesbasics">Les Basics</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link onClick={()=>{navigate('/lesbasic')}}>Home</Nav.Link>
+            <Nav.Link onClick={()=>{navigate('/lesbasics')}}>Home</Nav.Link>
             <Nav.Link onClick={()=>{navigate('/cart')}}>Cart</Nav.Link>
             <NavDropdown title="Contact" id="basic-nav-dropdown">             
               <NavDropdown.Item onClick={()=>{navigate('/customer')}}>고객센터</NavDropdown.Item>
@@ -49,7 +49,7 @@ function App() {
     
     <Suspense fallback={<div style={{marginTop:'50px'}}>로딩중</div>}>
     <Routes>
-        <Route path="/lesbasic" element={
+        <Route path="/lesbasics" element={
           <>
             <div className="main-bg"></div>
    
